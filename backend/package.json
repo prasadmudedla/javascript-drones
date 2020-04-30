@@ -4,7 +4,9 @@
   "description": "",
   "main": "fly.js",
   "scripts": {
-    "start": "nodemon fly.js"
+    "start": "nodemon fly.js",
+    "snyk-protect": "snyk protect",
+    "prepare": "npm run snyk-protect"
   },
   "author": "",
   "license": "ISC",
@@ -12,9 +14,11 @@
     "express": "^4.16.4",
     "lodash": "^4.17.11",
     "socket.io": "^2.2.0",
-    "waait": "^1.0.2"
+    "waait": "^1.0.2",
+    "snyk": "^1.316.1"
   },
   "devDependencies": {
     "nodemon": "^1.18.7"
-  }
+  },
+  "snyk": true
 }
